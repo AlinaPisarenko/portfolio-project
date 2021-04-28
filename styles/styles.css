@@ -1,13 +1,59 @@
+:root {
+    --primary-color:black;
+    --primary-text-color: white;
+    --default-font: "Roboto", sans-serif;
+    --secondary-font: font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--default-font);
+    color: var(--primary-text-color);
+    background-color: var(--primary-color)
+}
+
 h1 {
   font-size: 60px;
   line-height: 80px;
   letter-spacing: 8px;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 h2 {
   font-size: 18px;
   line-height: 10px;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
+}
+.hero {
+    margin-top: -60px;
+    padding: 200px 20px ;
+    background-image: url("/styles/main-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .custom-toggler.navbar-toggler {
+            border-color: var(--primary-text-color)
+ }
+ .custom-toggler .navbar-toggler-icon {
+            background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+.hero p {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.navigation-bar div a {
+    color: var(--primary-text-color) !important;
+}
+
+@media only screen and (max-width:600px) {
+    h1 {
+  font-size: 40px;
+ 
+}
+   .hero {   
+    background-image: url("/styles/IMG_8491.jpg");
+background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
 }

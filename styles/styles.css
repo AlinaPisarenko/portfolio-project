@@ -8,7 +8,7 @@
 body {
     font-family: var(--default-font);
     color: var(--primary-text-color);
-    background-color: var(--primary-color);
+    
     background-image: url("/styles/main-image1.png");
     background-position: top right;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ h2 {
 }
 .hero {
     margin-top: -60px;
-    margin-bottom: 200px;
+
     padding: 180px 20px;
     
 }

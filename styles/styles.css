@@ -4,7 +4,9 @@
     --default-font: "Roboto", sans-serif;
     --secondary-font: font-family: 'Montserrat', sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -106,6 +108,13 @@ text-decoration: none;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 color:var(--primary-text-color);
+transition: background-color 0.5s ease;
+}
+.main-links:hover {
+    background-color: var(--primary-text-color);
+    
+    color: var(--primary-color);
+    transition: background-color 0.5s ease;
 }
 .container {
 margin: 0 auto;
@@ -116,14 +125,20 @@ padding: 0 10px;
     filter: grayscale(100%);
     opacity: 70%;
     margin-bottom: 10px;
+    transition: opacity 0.5s ease;
 }
 .row.apps:hover {
    filter: grayscale(0%);
-    opacity: 100%;
+ opacity: 100%;
     margin-bottom: 10px;
+    transition: opacity 0.5s ease;
 }
 .logos {
     font-size: 26px;
+}
+.app-description {
+    font-size: 16px;
+   
 }
 footer {
     text-align: center;

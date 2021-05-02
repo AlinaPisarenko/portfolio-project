@@ -21,14 +21,19 @@
   height: 2.5rem;
 }
 
-body {
+body.home-page {
     font-family: var(--default-font);
-    color: var(--primary-text-color);
-    
+    color: var(--primary-text-color);   
     background-image: url("/styles/main-image1.png");
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body.other-page {
+font-family: var(--default-font);
+    color: var(--primary-text-color);  
+    background-color: var(--primary-color);   
 }
 
 h1 {
@@ -42,11 +47,28 @@ h2 {
   line-height: 10px;
   font-weight: 400;
 }
+h3 {
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+.first-row {
+    text-align: right;
+}
+.second-row {
+    text-align: left;
+}
 .hero {
     margin-top: -60px;
 
     padding: 180px 20px;
-    
+}
+   .hero.other {
+    margin-top: -60px;
+    padding: 180px 20px;
+   
 }
  .custom-toggler.navbar-toggler {
             border-color: var(--primary-text-color);
@@ -87,16 +109,21 @@ color:var(--primary-text-color);
 }
 .container {
 margin: 0 auto;
+padding: 0 10px;
 
 }
 .row.apps {
-    opacity: 60%;
+    filter: grayscale(100%);
+    opacity: 70%;
     margin-bottom: 10px;
 }
 .row.apps:hover {
-   
+   filter: grayscale(0%);
     opacity: 100%;
     margin-bottom: 10px;
+}
+.logos {
+    font-size: 26px;
 }
 footer {
     text-align: center;
@@ -112,6 +139,7 @@ footer {
 }
 
 @media only screen and (max-width:1024px) and (min-width:768px)  {
+  
     h1 {
   font-size: 60px;
   line-height: 60px;
@@ -122,16 +150,25 @@ h2 {
   
 
 }
-body {
+body.home-page {
   background-image: url("/styles/main-image-small.png");
 background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+  body.other-page {
+font-family: var(--default-font);
+    color: var(--primary-text-color);  
+    background-color: var(--primary-color);   
+}
    .hero {  
        padding: 760px 20px 100px; 
   
    }
+    .hero.other {
+    padding: 180px 20px;
+   
+}
    .main-links.contact {
        display: none;
    }
@@ -142,6 +179,8 @@ background-position: top center;
 
 
 @media only screen and (max-width:767px) {
+
+  
     h1 {
   font-size: 40px;
   line-height: 50px;
@@ -152,16 +191,25 @@ h2 {
   
 
 }
-body {
+body.home-page {
   background-image: url("/styles/main-image-small.png");
 background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+  body.other-page {
+font-family: var(--default-font);
+    color: var(--primary-text-color);  
+    background-color: var(--primary-color);   
+}
    .hero {  
        padding: 340px 20px 100px; 
   
    }
+    .hero.other {
+    padding: 180px 20px;
+   
+}
    .main-links.contact {
        display: none;
    }

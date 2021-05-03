@@ -7,6 +7,64 @@
 html {
   scroll-behavior: smooth;
 }
+body.home-page {
+    font-family: var(--default-font);
+    color: var(--primary-text-color);   
+    background-image: url("/styles/main-image1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.other-page {
+font-family: var(--default-font);
+    color: var(--primary-text-color);  
+    background-color: var(--primary-color);   
+}
+body.about-me-page {
+   font-family: var(--default-font);
+    color: var(--primary-text-color);   
+    background-image: url("/styles/main-image1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+h1 {
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 8px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  text-align: center;
+}
+h5 {
+padding-top: 60px;
+font-size: 58px;
+line-height: 80px;
+letter-spacing: 8px;
+font-weight: 700;
+}
+h6 {
+    font-size: 26px;
+}
+footer {
+    text-align: center;
+    position:absolute;
+   bottom:10px;
+   width:100%;
+   height:30px; 
+}
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -23,39 +81,6 @@ html {
   height: 2.5rem;
 }
 
-body.home-page {
-    font-family: var(--default-font);
-    color: var(--primary-text-color);   
-    background-image: url("/styles/main-image1.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-body.other-page {
-font-family: var(--default-font);
-    color: var(--primary-text-color);  
-    background-color: var(--primary-color);   
-}
-
-h1 {
-  font-size: 58px;
-  line-height: 80px;
-  letter-spacing: 8px;
-  font-weight: 700;
-}
-h2 {
-  font-size: 18px;
-  line-height: 10px;
-  font-weight: 400;
-}
-h3 {
-  font-size: 58px;
-  line-height: 80px;
-  letter-spacing: 8px;
-  font-weight: 700;
-  text-align: center;
-}
 .first-row {
     text-align: right;
 }
@@ -64,13 +89,15 @@ h3 {
 }
 .hero {
     margin-top: -60px;
-
     padding: 180px 20px;
 }
    .hero.other {
     margin-top: -60px;
-    padding: 180px 20px;
-   
+    padding: 180px 20px;   
+}
+  .hero.about {
+    margin-top: -60px;
+    padding: 180px 20px;   
 }
  .custom-toggler.navbar-toggler {
             border-color: var(--primary-text-color);
@@ -140,30 +167,34 @@ padding: 0 10px;
     font-size: 16px;
    
 }
-footer {
-    text-align: center;
-    position:absolute;
-   bottom:10px;
-   width:100%;
-   height:30px; 
-}
 .social-link {
     color: var(--primary-text-color);
     margin: 0 30px ;
      font-size: 20px;
 }
-
+.about-me {
+    font-size: 14px;
+    font-weight: 300;
+}
+.vscode-logo {
+    width:46px;
+}
+.about-me-page {
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.skills-logo {
+    font-size: 40px;
+    
+}
 @media only screen and (max-width:1024px) and (min-width:768px)  {
   
-    h1 {
+h1 {
   font-size: 60px;
-  line-height: 60px;
- 
+  line-height: 60px; 
 }
 h2 {
-  font-size: 20px;
-  
-
+  font-size: 20px; 
 }
 body.home-page {
   background-image: url("/styles/main-image-small.png");
@@ -176,52 +207,51 @@ font-family: var(--default-font);
     color: var(--primary-text-color);  
     background-color: var(--primary-color);   
 }
-   .hero {  
-       padding: 760px 20px 100px; 
-  
-   }
-    .hero.other {
-    padding: 180px 20px;
+body.about-me-page {
+font-family: var(--default-font);
+color: var(--primary-text-color);  
+background-color: var(--primary-color);   
+}
+.hero {  
+padding: 760px 20px 100px; 
+}
+.hero.other {
+padding: 180px 20px;
    
 }
-   .main-links.contact {
-       display: none;
-   }
+.main-links.contact {
+display: none;
 }
-
-
-
-
-
-@media only screen and (max-width:767px) {
-
-  
-    h1 {
+}
+@media only screen and (max-width:767px) { 
+h1 {
   font-size: 40px;
-  line-height: 50px;
- 
+  line-height: 50px; 
 }
 h2 {
   font-size: 14px;
-  
-
 }
 body.home-page {
-  background-image: url("/styles/main-image-small.png");
+background-image: url("/styles/main-image-small.png");
 background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+background-repeat: no-repeat;
+background-size: cover;
 }
-  body.other-page {
+body.other-page {
 font-family: var(--default-font);
-    color: var(--primary-text-color);  
-    background-color: var(--primary-color);   
+color: var(--primary-text-color);  
+background-color: var(--primary-color);   
 }
-   .hero {  
+body.about-me-page {
+font-family: var(--default-font);
+color: var(--primary-text-color);  
+background-color: var(--primary-color);   
+}
+.hero {  
        padding: 340px 20px 100px; 
   
    }
-    .hero.other {
+.hero.other {
     padding: 180px 20px;
    
 }

@@ -45,12 +45,16 @@ h2 {
 h3 {
   font-size: 58px;
   line-height: 80px;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   font-weight: 700;
   text-align: center;
 }
 h4 {
-    padding-top: 10px;
+font-size: 20px;
+line-height: 40px;
+letter-spacing: 4px;
+font-weight: 700;
+padding-top: 10px;
 }
 h5 {
 padding-top: 40px;
@@ -124,7 +128,6 @@ footer {
 .navigation-bar div a {
     color: var(--primary-text-color) !important;
 }
-
 .main-links, .explore-link {
 display: inline-block;
 margin: 20px 0px 5px;
@@ -162,14 +165,11 @@ border-radius: 0 !important;
 .container {
 margin: 0 auto;
 padding: 0 10px;
-
 }
-
 .row.apps {   
     filter: grayscale(100%);
     opacity: 70%;
-    transition: opacity 0.5s ease;
-  
+    transition: opacity 0.5s ease;  
 }
 .row.apps:hover {
    filter: grayscale(0%);

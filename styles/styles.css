@@ -88,10 +88,12 @@ footer {
 .email-link {
     color: var(--primary-text-color);
     text-decoration: none;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
+    transition: color 0.4s ease;
 }
 .email-link:hover {
     color:var(--secondary-text-color);
+    transition: color 0.4s ease;
 }
 .first-row {
     text-align: right;
@@ -210,7 +212,6 @@ padding: 0 10px;
     width:46px;
 }
 .about-me-page {
- 
     background-image: url("/styles/main-image1.png");
     background-position: top right;
     background-repeat: no-repeat;

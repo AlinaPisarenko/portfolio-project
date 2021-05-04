@@ -14,6 +14,7 @@ body.home-page {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 body.other-page {
@@ -47,6 +48,9 @@ h3 {
   letter-spacing: 8px;
   font-weight: 700;
   text-align: center;
+}
+h4 {
+    padding-top: 10px;
 }
 h5 {
 padding-top: 40px;
@@ -92,8 +96,11 @@ footer {
     padding: 180px 20px;
 }
    .hero.other {
-    margin-top: -60px;
-    padding: 180px 20px;   
+          width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
   .hero.about {
     margin-top: -60px;
@@ -118,7 +125,7 @@ footer {
     color: var(--primary-text-color) !important;
 }
 
-.main-links {
+.main-links, .explore-link {
 display: inline-block;
 margin: 20px 0px 5px;
 width:180px;
@@ -138,8 +145,17 @@ color:var(--primary-text-color);
 transition: background-color 0.5s ease;
 }
 .main-links:hover {
-    background-color: var(--primary-text-color);
-    
+    background-color: var(--primary-text-color);   
+    color: var(--primary-color);
+    transition: background-color 0.5s ease;
+}
+.explore-link {
+background-color: var(--primary-color) !important;
+border-color: var(--primary-text-color) !important;
+border-radius: 0 !important;
+}
+.explore-link:hover {
+    background-color: var(--primary-text-color) !important;  
     color: var(--primary-color);
     transition: background-color 0.5s ease;
 }
@@ -148,11 +164,12 @@ margin: 0 auto;
 padding: 0 10px;
 
 }
-.row.apps {
+
+.row.apps {   
     filter: grayscale(100%);
     opacity: 70%;
-    margin-bottom: 10px;
     transition: opacity 0.5s ease;
+  
 }
 .row.apps:hover {
    filter: grayscale(0%);
@@ -283,4 +300,12 @@ width:180px;
    .main-links.contact {
        display: none;
    }
+   .row.apps {      
+    filter: grayscale(0%);
+    opacity: 100%; 
+    padding-bottom: 40px;
 }
+
+}
+
+

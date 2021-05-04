@@ -49,7 +49,7 @@ h3 {
   text-align: center;
 }
 h5 {
-padding-top: 60px;
+padding-top: 40px;
 font-size: 58px;
 line-height: 80px;
 letter-spacing: 8px;
@@ -208,6 +208,7 @@ font-family: var(--default-font);
     background-color: var(--primary-color);   
 }
 body.about-me-page {
+   
 font-family: var(--default-font);
 color: var(--primary-text-color);  
 background-color: var(--primary-color);   
@@ -232,20 +233,44 @@ h2 {
   font-size: 14px;
 }
 body.home-page {
+
 background-image: url("/styles/main-image-small.png");
 background-position: top center;
 background-repeat: no-repeat;
 background-size: cover;
 }
 body.other-page {
+   
 font-family: var(--default-font);
 color: var(--primary-text-color);  
 background-color: var(--primary-color);   
 }
 body.about-me-page {
+text-align: center;
+background-image: none;
 font-family: var(--default-font);
 color: var(--primary-text-color);  
 background-color: var(--primary-color);   
+}
+h5 {
+    padding-top: 10px;
+}
+.main-links {
+    display: block;
+    width: 100%;
+
+}
+.main-links.my-work-hero {
+    display: inline-block;
+
+width:180px;
+}
+
+.skills-logo {
+    margin-bottom: 30px;
+}
+.about-me-page {
+    margin: 0 5px;
 }
 .hero {  
        padding: 340px 20px 100px; 

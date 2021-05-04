@@ -4,6 +4,9 @@
     --default-font: "Roboto", sans-serif;
     --secondary-font: font-family: 'Montserrat', sans-serif;
 }
+body, html {
+  height: 100%;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -22,14 +25,7 @@ font-family: var(--default-font);
     color: var(--primary-text-color);  
     background-color: var(--primary-color);   
 }
-body.about-me-page {
-   font-family: var(--default-font);
-    color: var(--primary-text-color);   
-    background-image: url("/styles/main-image1.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;  
-}
+
 h1 {
   font-size: 58px;
   line-height: 80px;
@@ -38,11 +34,13 @@ h1 {
 }
 
 h2 {
+    
   font-size: 18px;
   line-height: 10px;
   font-weight: 400;
 }
 h3 {
+    color: #F65282;
   font-size: 58px;
   line-height: 80px;
   letter-spacing: 6px;
@@ -50,20 +48,22 @@ h3 {
   text-align: center;
 }
 h4 {
-font-size: 20px;
+    
+font-size: 26px;
 line-height: 40px;
-letter-spacing: 4px;
+letter-spacing: 3px;
 font-weight: 700;
 padding-top: 10px;
 }
 h5 {
-padding-top: 40px;
+padding-top: 10px;
 font-size: 58px;
 line-height: 80px;
 letter-spacing: 8px;
 font-weight: 700;
 }
 h6 {
+
     font-size: 26px;
 }
 footer {
@@ -73,9 +73,18 @@ footer {
    width:100%;
    height:30px; 
 }
+.contact {
+    color: var(--primary-text-color);
+}
+.email-link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding-bottom: 20px;;
+}
 #page-container {
   position: relative;
   min-height: 100vh;
+  
 }
 
 #content-wrap {
@@ -197,13 +206,20 @@ padding: 0 10px;
     width:46px;
 }
 .about-me-page {
+ 
+    background-image: url("/styles/main-image1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;  
     margin-left: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    
 }
 .skills-logo {
     font-size: 40px;
     
 }
+
 @media only screen and (max-width:1024px) and (min-width:768px)  {
   
 h1 {
@@ -224,12 +240,10 @@ font-family: var(--default-font);
     color: var(--primary-text-color);  
     background-color: var(--primary-color);   
 }
-body.about-me-page {
-   
-font-family: var(--default-font);
-color: var(--primary-text-color);  
-background-color: var(--primary-color);   
+.about-me-page {
+margin-bottom: 300px;
 }
+
 .hero {  
 padding: 760px 20px 100px; 
 }
@@ -305,7 +319,19 @@ width:180px;
     opacity: 100%; 
     padding-bottom: 40px;
 }
-
+.about-me-page {
+    background-image: none;
+}
+h4 {
+color:#F65282;
+}
+h5 {
+   color:#F65282; 
+}
 }
 
-
+@media only screen and (max-width:815px) and (min-width:768px) {
+    .about-me-page {
+margin-bottom: 100px;
+}
+}

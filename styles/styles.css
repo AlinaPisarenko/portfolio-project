@@ -4,9 +4,7 @@
     --default-font: "Roboto", sans-serif;
     --secondary-font: font-family: 'Montserrat', sans-serif;
 }
-body, html {
-  height: 100%;
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -264,14 +262,12 @@ h2 {
   font-size: 14px;
 }
 body.home-page {
-
 background-image: url("/styles/main-image-small.png");
 background-position: top center;
 background-repeat: no-repeat;
 background-size: cover;
 }
-body.other-page {
-   
+body.other-page {   
 font-family: var(--default-font);
 color: var(--primary-text-color);  
 background-color: var(--primary-color);   

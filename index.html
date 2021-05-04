@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alina Pisarenko is a front-end developer based in New York."
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,7 +25,7 @@
     ></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Roboto:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/styles.css" />
@@ -34,7 +38,9 @@
           class="navbar navbar-expand-lg navbar-light bg-transparent navigation-bar"
         >
           <div class="container-fluid">
-            <a class="navbar-brand" href="/">ALINA PISARENKO</a>
+            <a class="navbar-brand active-nav-link" href="/" title="Homepage"
+              >ALINA PISARENKO</a
+            >
             <button
               class="navbar-toggler custom-toggler"
               type="button"
@@ -49,19 +55,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/"
+                  <a
+                    class="nav-link active-nav-link"
+                    title="Homepage"
+                    aria-current="page"
+                    href="/"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/about.html">About</a>
+                  <a class="nav-link" title="About Alina" href="/about.html"
+                    >About</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/work.html">My work</a>
+                  <a class="nav-link" title="Alina's work" href="/work.html"
+                    >My work</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link"
+                    title="Contact Alina"
                     href="/contact.html"
                     tabindex="-1"
                     aria-disabled="true"
@@ -76,25 +91,54 @@
           <p>Hi, I am</p>
           <h1>ALINA PISARENKO</h1>
           <h2>Front-end developer based in New York</h2>
-          <a href="/work.html" class="main-links my-work-hero">My Work</a>
-          <a href="/contact.html" class="main-links contact">Contact me</a>
+          <a
+            href="/work.html"
+            title="Alina's work"
+            class="main-links my-work-hero"
+            >My Work</a
+          >
+          <a
+            href="/contact.html"
+            title="Contact Alina"
+            class="main-links contact"
+            >Contact me</a
+          >
         </div>
       </div>
       <footer id="footer">
-        <a href="https://www.instagram.com/_alina_alina_p/" target="_blank"
+        <a
+          href="https://www.instagram.com/_alina_alina_p/"
+          title="Instagram"
+          target="_blank"
           ><i class="fab fa-instagram social-link"></i
         ></a>
         <a
           href="https://www.linkedin.com/in/alina-pisarenko-4a916b207/"
+          title="LinkedIn"
           target="_blank"
           ><i class="fab fa-linkedin-in social-link"></i
         ></a>
-        <a href="https://www.facebook.com/pisarenko.alina/" target="_blank"
+        <a
+          href="https://www.facebook.com/pisarenko.alina/"
+          title="Facebook"
+          target="_blank"
           ><i class="fab fa-facebook-f social-link"></i
         ></a>
-        <a href="https://github.com/AlinaPisarenko" target="_blank"
+        <a
+          href="https://github.com/AlinaPisarenko"
+          title="GitHub"
+          target="_blank"
           ><i class="fab fa-github social-link"></i
         ></a>
+        <p class="coded-by mt-3 pb-2">
+          This project was coded with ♡ by Alina Pisarenko and is
+          <a
+            href="https://github.com/AlinaPisarenko/portfolio-project"
+            class="open-link"
+            target="_blank"
+            >open-sourced on GitHub</a
+          >
+        </p>
       </footer>
     </div>
   </body>

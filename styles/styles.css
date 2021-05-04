@@ -1,6 +1,7 @@
 :root {
     --primary-color:black;
     --primary-text-color: white;
+     --secondary-text-color: #F65282;
     --default-font: "Roboto", sans-serif;
     --secondary-font: font-family: 'Montserrat', sans-serif;
 }
@@ -38,7 +39,7 @@ h2 {
   font-weight: 400;
 }
 h3 {
-    color: #F65282;
+    color:var(--secondary-text-color);
   font-size: 58px;
   line-height: 80px;
   letter-spacing: 6px;
@@ -79,6 +80,9 @@ footer {
     text-decoration: none;
     padding-bottom: 20px;;
 }
+.email-link:hover {
+    color:var(--secondary-text-color);
+}
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -107,14 +111,14 @@ footer {
     margin-top: -60px;
     padding: 180px 20px;
 }
-   .hero.other {
+.hero.other {
           width: 100vw;
     height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;  
 }
-  .hero.about {
+.hero.about {
     margin-top: -60px;
     padding: 180px 20px;   
 }
@@ -196,6 +200,11 @@ padding: 0 10px;
     color: var(--primary-text-color);
     margin: 0 30px ;
      font-size: 20px;
+     transition: color 0.4s ease;
+}
+.social-link:hover {
+    color: var(--secondary-text-color);
+    transition: color 0.4s ease;
 }
 .about-me {
     font-size: 14px;
@@ -320,10 +329,10 @@ width:180px;
     background-image: none;
 }
 h4 {
-color:#F65282;
+color:var(--secondary-text-color);
 }
 h5 {
-   color:#F65282; 
+   color:var(--secondary-text-color); 
 }
 }
 
